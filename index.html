@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/svg+xml" href="assests/favicon.svg">
+  <title>Mohammadreza Shakouri</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+  <!-- ============ TOP NAVBAR ============ -->
+  <header id="top-navbar">
+    <nav>
+      <ul>
+        <li><a href="#row-hero">About</a></li>
+        <li><a href="#row-research">Research</a></li>
+        <li><a href="#row-publications">Publications</a></li>
+        <li><a href="#row-teaching">Teaching</a></li>
+        <li><a href="#row-projects">Projects</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Dot navigation (optional, jump between rows) -->
+  <nav id="dot-nav">
+    <a href="#row-hero"></a>
+    <a href="#row-news"></a>
+    <a href="#row-research"></a>
+    <a href="#row-publications"></a>
+    <a href="#row-teaching"></a>
+    <a href="#row-projects"></a>
+
+  </nav>
+
+  <!-- ============ ROW 1: PHOTO/INFO (left) + SUMMARY (right) ============ -->
+  <section class="row split" id="row-hero">
+    <div class="col-left">
+      <img src="assests/myphoto.JPEG" alt="Myphoto" id="profile-photo">
+      <h1>Mohammadreza Shakouri</h1>
+      <p id="tagline">Machine Learning Researcher</p>
+      <ul id="contact-links">
+        <li><a href="mailto:mohammadrezashakouri@eng.uk.ac.ir" aria-label="Email"><i
+              class="fa-solid fa-envelope"></i></a></li>
+        <li><a href="https://github.com/M0hammadrezaShakouri" target="_blank" aria-label="GitHub"><i
+              class="fa-brands fa-github"></i></a></li>
+        <li><a href="https://www.linkedin.com/in/mohammadrezashakouri" target="_blank" aria-label="LinkedIn"><i
+              class="fa-brands fa-linkedin"></i></a></li>
+        <li><a href="https://scholar.google.com/citations?user=Rq2ZPK8AAAAJ&hl=en" target="_blank"
+            aria-label="Google Scholar"><i class="fa-brands fa-google-scholar"></i></a></li>
+      </ul>
+      <a href="assests/MohammadrezaShakouri-CV.pdf" class="cv-btn" download="MohammadrezaShakouri_CV.pdf">
+        <i class="fa-solid fa-download"></i> Download CV
+      </a>
+    </div>
+    <div class="col-right">
+      <h1>Summary</h1>
+
+
+      <p>
+        I am a Computer Engineering graduate of Shahid Bahonar University of Kerman
+        , and I am about to begin my master's degree at
+        University of Tehran.
+      </p>
+
+      <p>
+        My research journey began during my bachelor's studies, where, under the
+        guidance of Professor Mahdi Eftekhari, I worked on self-supervised learning
+        for medical image analysis. This led to DINO-CXR, a vision-transformer-based
+        self-supervised method for chest X-ray classification.
+      </p>
+
+      <p>
+        Today, my interests center on multimodal learning with vision-language
+        models, trustworthy AI, and AI for healthcare. I am curious by nature and enjoy exploring
+        new research directions instead of staying within one fixed area. I am
+        committed to applying what I learn to meaningful real-world problems, both
+        through teamwork and independent work, and I look forward to engaging with international research groups and
+        taking
+        part in the wider research community.
+      </p>
+      <div class="about-columns">
+        <div class="about-col">
+          <h3>Interests</h3>
+          <ul class="dot-list">
+            <li>Medical Image Analysis</li>
+            <li>Vision Language Models</li>
+            <li>Machine Learning</li>
+            <li>Computer Vison</li>
+          </ul>
+        </div>
+
+        <div class="about-col">
+          <h3>Education</h3>
+          <ul class="education-list">
+            <li>
+              <i class="fa-solid fa-graduation-cap"></i>
+              <div>
+                <p class="edu-title">B.Sc.in Computer Engineering, 2018-2023</p>
+                <p class="edu-sub">Shahid Bahonar University of Kerman</p>
+                <p class="edu-gpa">GPA: 3.23/4</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ROW 1: News ============ -->
+  <section class="row" id="row-news">
+    <h2>News</h2>
+
+    <div class="news-grid">
+      <div class="news-card">
+        <span class="news-date">Sep 2026</span>
+        <p class="news-text">Ranked top 0.1% (Ranked 21st) among ~25,000 applicants in Iran's Nationwide Graduate
+          Entrance
+          Exam for Computer Engineering.</p>
+      </div>
+      <div class="news-card">
+        <span class="news-date">Aug 2023</span>
+        <p class="news-text">Our paper DINO-CXR accepted to <a href="https://www.isvc.net/">ISVC </a>2023 (Springer).
+        </p>
+      </div>
+      <!-- Add new cards here, most recent first -->
+    </div>
+  </section>
+
+
+  <section class="row" id="row-research">
+    <h2>Research Experience</h2>
+
+    <div class="timeline">
+      <article class="timeline-entry">
+        <p class="entry-dates">Jan 2025 – Present</p>
+        <h3>Researcher, Shahid Bahonar University of Kerman</h3>
+        <p class="entry-subtitle">Vision-Language Models for Treatment Planning in Restorative Dentistry</p>
+        <p class="entry-supervisor">Supervised by <a
+            href="https://scholar.google.com/citations?user=e5qD3-EAAAAJ&hl=en">Prof. Mahdi Eftekhari</a></p>
+        <ul class="entry-achievements">
+          <li>Developing a multimodal vision-language pipeline for restorative dental treatment planning.</li>
+          <li>Investigating a clinical reasoning pipeline that extracts structured findings and uses an LLM for
+            treatment planning.</li>
+          <li>Exploring retrieval-augmented generation (RAG) to ground responses in dental literature.</li>
+        </ul>
+      </article>
+
+      <article class="timeline-entry">
+        <p class="entry-dates">Sep 2022 – Aug 2023</p>
+        <h3>Undergraduate Research Assistant, Shahid Bahonar University of Kerman</h3>
+        <p class="entry-subtitle">Self-supervised learning for chest X-ray classification</p>
+        <p class="entry-supervisor">Supervised by <a
+            href="https://scholar.google.com/citations?user=e5qD3-EAAAAJ&hl=en">Prof. Mahdi Eftekhari</a></p>
+        <ul class="entry-achievements">
+          <li>Compared self-supervised methods with different networks and frameworks.</li>
+          <li>Designed and implemented a self-supervised method based on a vision transformer.</li>
+        </ul>
+      </article>
+    </div>
+  </section>
+
+  <!-- ============ ROW 3: PUBLICATIONS ============ -->
+  <section class="row" id="row-publications">
+    <h2>Publications</h2>
+
+    <div class="pub-card">
+      <img src="assests/Publication-dinocxr.jpg" alt="DONO-CXR" class="pub-image">
+      <div class="pub-content">
+        <p class="pub-title">DINO-CXR: A Self Supervised Method Based on Vision Transformer for Chest X-Ray
+          Classification</p>
+        <p class="pub-venue">Springer, ISVC 2023</p>
+        <p class="pub-desc">
+          DINO-CXR adapts DINO, a self-supervised learning framework originally built for natural images, to a vision
+          transformer backbone for chest X-ray classification. It tackles a real bottleneck in medical imaging — the
+          scarcity of labeled data — by learning strong representations from unlabeled X-rays first. On pneumonia and
+          COVID-19 detection, it outperforms existing self-supervised methods in accuracy while needing far less labeled
+          data to fine-tune.
+        </p>
+        <a href="https://link.springer.com/chapter/10.1007/978-3-031-47966-3_25" target="_blank" class="pub-link">Link
+          to paper</a>
+      </div>
+    </div>
+
+    <!-- Duplicate .pub-card for each publication -->
+
+  </section>
+  <!--=======================row4:teaching========-->
+  <section class="row" id="row-teaching">
+    <h2>Teaching Experience</h2>
+    <div class="timeline">
+      <article class="timeline-entry">
+        <p class="entry-dates">Fall 2021 - Spring 2022</p>
+        <h3>Teaching Assistant — Advanced Programming</h3>
+        <p class="entry-subtitle">Department of Computer Engineering, Shahid Bahonar University of Kerman, Iran</p>
+        <ul class="entry-achievements">
+          <li>Held weekly practice sessions for ~75 students with additional exercises to reinforce lecture material.
+          </li>
+          <li>Designed and graded programming assignments and projects, providing feedback on code quality and design
+            choices.</li>
+        </ul>
+      </article>
+
+      <article class="timeline-entry">
+        <p class="entry-dates">Fall 2022</p>
+        <h3>Teaching Assistant — Artificial Intelligence and Expert Systems</h3>
+        <p class="entry-subtitle">Department of Computer Engineering, Shahid Bahonar University of Kerman, Iran</p>
+        <ul class="entry-achievements">
+          <li>Graded assignments and exams, and gave feedback on projects.</li>
+        </ul>
+      </article>
+
+      <!-- Duplicate .timeline-entry for each course -->
+
+    </div>
+  </section>
+
+  <!-- ============ ROW 5: PROJECTS ============ -->
+  <section class="row" id="row-projects">
+    <h2>Selected Projects</h2>
+
+    <div class="project-grid">
+
+      <div class="project-card">
+        <div class="project-card-top">
+          <h3>Principal Component Analysis (PCA) on the Mnist dataset</h3>
+          <a href="https://github.com/M0hammadrezaShakouri/Feature-extraction" target="_blank"
+            aria-label="View on GitHub">
+            <i class="fa-brands fa-github"></i>
+          </a>
+        </div>
+        <p class="project-desc">Performed PCA with SVD to determine the optimal number of principal components.</p>
+        <div class="project-tags">
+          <span>PyTorch</span>
+          <span>Numpy</span>
+          <span>Pandas</span>
+          <span>Scipy</span>
+
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-card-top">
+          <h3>Decision Tree: ID3 Algorithm</h3>
+          <a href="https://github.com/M0hammadrezaShakouri/ID3-Algorithm" target="_blank" aria-label="View on GitHub">
+            <i class="fa-brands fa-github"></i>
+          </a>
+        </div>
+        <p class="project-desc">Implemented decision trees using ID3 algorithm from scratch.</p>
+        <div class="project-tags">
+          <span>PyTorch</span>
+          <span>Numpy</span>
+          <span>Pandas</span>
+        </div>
+      </div>
+      <div class="project-card">
+        <div class="project-card-top">
+          <h3>Medical MNIST Classification using VGG16/VGG19 and Transfer Learning</h3>
+          <a href="https://github.com/M0hammadrezaShakouri/Transfer-Learning" target="_blank"
+            aria-label="View on GitHub">
+            <i class="fa-brands fa-github"></i>
+          </a>
+        </div>
+        <p class="project-desc">Conducted classification on the Medical MNIST dataset using transfer learning with
+          VGG16/VGG19.</p>
+        <div class="project-tags">
+          <span>Python</span>
+          <span>Numpy</span>
+          <span>Pandas</span>
+          <span>scikit-learn</span>
+          <span>Matplotlib</span>
+        </div>
+      </div>
+      <div class="project-card">
+        <div class="project-card-top">
+          <h3>Stochastic Gradient Descent (SGD) and Batch Gradient Descent algorithms for linear regression </h3>
+          <a href="https://github.com/M0hammadrezaShakouri/Linear-Regression" target="_blank"
+            aria-label="View on GitHub">
+            <i class="fa-brands fa-github"></i>
+          </a>
+        </div>
+        <p class="project-desc">Implemented linear regression using stochastic gradient descent and batch gradient
+          descent.</p>
+        <div class="project-tags">
+          <span>Python</span>
+          <span>Numpy</span>
+          <span>Pandas</span>
+          <span>Matplotlib</span>
+        </div>
+      </div>
+      <div class="project-card">
+        <div class="project-card-top">
+          <h3>Neural Network Implementation for MultiClass Classification</h3>
+          <a href="https://github.com/M0hammadrezaShakouri/Multi-Class-Classification" target="_blank"
+            aria-label="View on GitHub">
+            <i class="fa-brands fa-github"></i>
+          </a>
+        </div>
+        <p class="project-desc">Implemented neural network multiclass classification in Python from scratch.</p>
+        <div class="project-tags">
+          <span>Python</span>
+          <span>Numpy</span>
+          <span>Pandas</span>
+          <span>scikit-learn</span>
+          <span>Matplotlib</span>
+        </div>
+      </div>
+      <div class="project-card">
+        <div class="project-card-top">
+          <h3>Frequency Domain Filtering</h3>
+          <a href="https://github.com/M0hammadrezaShakouri/Frequency-Domain-Filtering" target="_blank"
+            aria-label="View on GitHub">
+            <i class="fa-brands fa-github"></i>
+          </a>
+        </div>
+        <p class="project-desc">Implemented different filters (e.g., Gaussian) for frequency domain filtering.</p>
+        <div class="project-tags">
+          <span>Python</span>
+          <span>OpenCV</span>
+          <span>Numpy</span>
+          <span>Matplotlib</span>
+        </div>
+      </div>
+      <div class="project-card">
+        <div class="project-card-top">
+          <h3>US Airline Twitter Sentiment Analysis</h3>
+          <a href="https://github.com/M0hammadrezaShakouri/Sentiment-Analysis" target="_blank"
+            aria-label="View on GitHub">
+            <i class="fa-brands fa-github"></i>
+          </a>
+        </div>
+        <p class="project-desc">Implemented an LSTM model to conduct sentiment analysis on US airlines Twitter database.
+        </p>
+        <div class="project-tags">
+          <span>Python</span>
+          <span>Numpy</span>
+          <span>Pandas</span>
+          <span>Nltk</span>
+          <span>Seaborn</span>
+        </div>
+      </div>
+      <div class="project-card">
+        <div class="project-card-top">
+          <h3>Recommender System</h3>
+        </div>
+        <p class="project-desc">Implemented a recommender system based on DigiKala (An Iranian online shopping website)
+        </p>
+        <div class="project-tags">
+          <span>Python</span>
+          <span>gRPC</span>
+        </div>
+      </div>
+      <!-- Duplicate .project-card for each project -->
+
+    </div>
+  </section>
+
+  <!-- ============ ROW 7: sellected course ============ -->
+  <!--   <section class="row" id="row-coursework">
+    <h2>Selected Coursework</h2>
+
+    <div class="coursework-list">
+      <span class="course-pill">
+        <span class="course-name">Machine Learning</span>
+        <span class="course-grade">17.5 / 20</span>
+      </span>
+      <span class="course-pill">
+        <span class="course-name">Artificial Intelligence and Expert Systems</span>
+        <span class="course-grade">17.6 / 20</span>
+      </span>
+      <span class="course-pill">
+        <span class="course-name">Advanced Programming</span>
+        <span class="course-grade">19.75 / 20</span>
+      </span>
+      <span class="course-pill">
+        <span class="course-name">Signals and Systems</span>
+        <span class="course-grade">19 / 20</span>
+      </span>
+      <span class="course-pill">
+        <span class="course-name">Basics of Speech and Language Processing</span>
+        <span class="course-grade">17.73 / 20</span>
+      </span>
+      <span class="course-pill">
+        <span class="course-name">Fundamentals of Computational Intelligence</span>
+        <span class="course-grade">18.75 / 20</span>
+      </span>
+      <span class="course-pill">
+        <span class="course-name">Engineering Mathematics</span>
+        <span class="course-grade">19.25 / 20</span>
+      </span>
+      <span class="course-pill">
+        <span class="course-name">Engineering Statistics</span>
+        <span class="course-grade">17 / 20</span>
+      </span>
+      <span class="course-pill">
+        <span class="course-name">Systems Analysis and Design</span>
+        <span class="course-grade">18 / 20</span>
+      </span>
+      <span class="course-pill">
+        <span class="course-name">Microprocessor and Assembly Languages</span>
+        <span class="course-grade">19.25/ 20</span>
+      </span>
+
+    </div>
+  </section> -->
+
+
+
+
+  <!-- ============ ROW 6: SKILLS ============ -->
+  <!--   <section class="row" id="row-skills">
+    <h2>Technical Skills</h2>
+
+    <div class="skills-columns">
+      <div class="skill-category">
+        <p class="skill-cat-title">Programming Languages</p>
+        
+        <div class="skill-bar-item">
+          <p class="skill-bar-label">Python</p>
+          <div class="skill-bar-track">
+            <div class="skill-bar-fill" style="width: 90%;">90%</div>
+          </div>
+        </div>
+        <div class="skill-bar-item">
+          <p class="skill-bar-label">C#</p>
+          <div class="skill-bar-track">
+            <div class="skill-bar-fill" style="width: 90%;">90%</div>
+          </div>
+        </div>
+        <div class="skill-bar-item">
+          <div class="skill-bar-label">C/C++</div>
+          <div class="skill-bar-track">
+            <div class="skill-bar-fill" style="width: 70%;">70%</div>
+          </div>
+        </div>
+        <div class="skill-bar-item">
+          <p class="skill-bar-label">JavaScript</p>
+          <div class="skill-bar-track">
+            <div class="skill-bar-fill" style="width: 60%;">60%</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="skill-category">
+        <p class="skill-cat-title">ML / Deep Learning </p>
+        <div class="skill-bar-item">
+          <p class="skill-bar-label">Vision-Language models</p>
+          <div class="skill-bar-track">
+            <div class="skill-bar-fill" style="width: 80%;">80%</div>
+          </div>
+        </div>
+        <div class="skill-bar-item">
+          <p class="skill-bar-label">Self supervised learning</p>
+          <div class="skill-bar-track">
+            <div class="skill-bar-fill" style="width: 90%;">90%</div>
+          </div>
+        </div>
+        <div class="skill-bar-item">
+          <p class="skill-bar-label">Medical image analysis</p>
+          <div class="skill-bar-track">
+            <div class="skill-bar-fill" style="width: 90%;">90%</div>
+          </div>
+        </div>
+        <div class="skill-bar-item">
+          <p class="skill-bar-label">Machine Learning Knowledge</p>
+          <div class="skill-bar-track">
+            <div class="skill-bar-fill" style="width: 90%;">90%</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+  <!-- ============ ROW 7: CONTACT ============ -->
+  <section class="row" id="row-contact">
+    <h2>Contact</h2>
+    <p>Feel free to reach out at <a href="mailto:mohammadrezashakouri99@gmail.com">mohammadrezashakouri99@gmail.com</a>.
+    </p>
+    <footer>
+      <p>&copy; 2026 Mohammadreza Shakouri</p>
+    </footer>
+  </section>
+
+  <!--   <script>
+    const sections = document.querySelectorAll('.row');
+    const dots = document.querySelectorAll('#dot-nav a');
+    const navLinks = document.querySelectorAll('#top-navbar nav a');
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const target = '#' + entry.target.getAttribute('id');
+          dots.forEach(d => d.classList.toggle('active', d.getAttribute('href') === target));
+          navLinks.forEach(l => l.classList.toggle('active', l.getAttribute('href') === target));
+        }
+      });
+    }, { threshold: 0.5 });
+
+    sections.forEach(section => observer.observe(section));
+  </script> -->
+
+  <script>
+    const sections = document.querySelectorAll('.row');
+    const dots = document.querySelectorAll('#dot-nav a');
+    const navLinks = document.querySelectorAll('#top-navbar nav a');
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const target = '#' + entry.target.id;
+          dots.forEach(d => d.classList.toggle('active', d.getAttribute('href') === target));
+          navLinks.forEach(l => l.classList.toggle('active', l.getAttribute('href') === target));
+        }
+      });
+    }, {
+      rootMargin: '-45% 0px -54% 0px', // a thin band near the middle of the screen
+      threshold: 0
+    });
+
+    sections.forEach(section => observer.observe(section));
+  </script>
+</body>
+
+</html>
